@@ -1,5 +1,6 @@
 import tkinter as tk
 
+
 #LeftClick to discover field
 def leftClick(event):
     print("leftClick")
@@ -7,14 +8,15 @@ def leftClick(event):
 
 #RighClick to set flag
 def rightClick(event):
-    b["image"] =  bomb
+    b["image"] =  flag
 
 root = tk.Tk()
 
 #import images
-bomb = tk.PhotoImage(file="/Users/thomas/Documents/Programmierung/GitHub/minesweeper/images/flag.png")
+flag = tk.PhotoImage(file="FlagScale.png")
+#bomb = tk.PhotoImage(file="Bomb.png")
 
-b = tk.Button(root, image = bomb)
+b = tk.Button(root, image = flag, height = 5, width = 5)
 b.bind("<Button-1>", leftClick)
 b.bind("<Button-2>", rightClick)
 b.pack()
