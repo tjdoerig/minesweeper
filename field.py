@@ -1,5 +1,10 @@
 import tkinter as tk
 
+
+root = tk.Tk()
+
+        
+
 class field():
     def __init__(self):
 
@@ -12,7 +17,7 @@ class field():
         def rightClick(event):
             b["image"] =  flag
 
-        root = tk.Tk()
+        #root = tk.Tk()
 
         #import images
         flag = tk.PhotoImage(file="FlagScale.png")
@@ -23,4 +28,6 @@ class field():
         b.bind("<Button-2>", rightClick)
         b.pack()
 
-        root.mainloop()
+
+
+root.mainloop()        
